@@ -17,7 +17,7 @@ def createpost(request):
     db = cp(postTittle=postTittle, post=post)
     db.save()
     data = {"Post titile": postTittle, "post": post}
-    # return JsonResponse(data)
+
     return render(request, 'createpost.html')
 
 
